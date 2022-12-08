@@ -1,5 +1,5 @@
-import { Cage } from 'zenbox-util/cage'
-import { ensureFind } from 'zenbox-util/ensure'
+import { Cage } from 'libs/utils/cage'
+import { ensureFind } from 'libs/utils/ensure'
 import { Contact, parseContact } from '../../../generic/models/Contact'
 import { Person } from '../../../generic/models/Person'
 import { TelegramUsernameSchema } from '../TelegramUsername'
