@@ -1,14 +1,14 @@
-import { Cage } from 'libs/utils/cage'
+import { Cage, Caged } from 'libs/utils/cage'
 import { ensureFind } from 'libs/utils/ensure'
 import { Contact, parseContact } from '../../../generic/models/Contact'
 import { Person } from '../../../generic/models/Person'
 import { TelegramUsernameSchema } from '../TelegramUsername'
 
-export function ensureTelegramContact<Err>(person: Person, error?: Cage<Err>): Contact {
+export function ensureTelegramContact<Err extends Caged>(person: Person, error?: Cage<Err>): Contact {
   return ensureFind(person.contacts, c => c.startsWith(telegramUrlPrefix), error)
 }
 
-export function ensureTelegramUsername<Err>(person: Person, error?: Cage<Err>): string {
+export function ensureTelegramUsername<Err extends Caged>(person: Person, error?: Cage<Err>): string {
   return getTelegramUsernameFromUrl(ensureTelegramContact(person, error))
 }
 
