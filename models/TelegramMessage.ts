@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import { TelegramIdSchema } from './TelegramId'
 import { Id } from '../../generic/models/Id'
+import { TelegramIdSchema } from './TelegramId'
 
 /**
  * https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1_message_content.html
