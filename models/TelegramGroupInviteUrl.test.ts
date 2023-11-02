@@ -1,3 +1,4 @@
+import { expect, test } from '@jest/globals'
 import { TelegramGroupInviteUrlSchema } from './TelegramGroupInviteUrl'
 
 // Note: these are not real invite links, but they should pass the validation

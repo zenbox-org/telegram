@@ -1,3 +1,4 @@
+import { expect, test } from '@jest/globals'
 import { TelegramUsernameSchema } from './TelegramUsername'
 
 export const TelegramUsernameValidSamples = [
